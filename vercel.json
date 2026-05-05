@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/*.js", "use": "@vercel/node" },
+    { "src": "public/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/api/chat", "dest": "/api/chat.js" },
+    { "src": "/api/auth", "dest": "/api/auth.js" },
+    { "src": "/api/profile", "dest": "/api/profile.js" },
+    { "src": "/(.*)", "dest": "/public/$1" }
+  ]
+}

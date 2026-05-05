@@ -1,0 +1,8 @@
+{
+  "name": "vela-app",
+  "version": "1.0.0",
+  "description": "VĒLA · IA para emprendedores LATAM",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.105.3"
+  }
+}
